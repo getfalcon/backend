@@ -15,7 +15,8 @@
     }
   ],
   "require": {
-    "yiisoft/yii2": "*"
+    "yiisoft/yii2": "*",
+    "getfalcon/core": "@dev"
   },
   "autoload": {
     "psr-4": {

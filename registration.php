@@ -6,4 +6,4 @@
  * @version    0.0.1-alpha.0.1
  */
 
-\core\components\ComponentRegistrar::register(\core\components\ComponentRegistrar::MODULE, 'backend', __DIR__);
+\falcon\core\components\ComponentRegistrar::register(\falcon\core\components\ComponentRegistrar::MODULE, 'backend', __DIR__);
