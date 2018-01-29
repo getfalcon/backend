@@ -6,7 +6,7 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace app\modules\backend\models\menu\builder;
+namespace falcon\backend\models\menu\builder;
 
 /**
  * Menu builder command

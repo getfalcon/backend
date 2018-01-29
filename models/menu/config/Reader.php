@@ -6,18 +6,18 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace app\modules\backend\models\menu\config;
+namespace falcon\backend\models\menu\config;
 
-class Reader extends \core\config\reader\Filesystem {
+class Reader extends \falcon\core\config\reader\Filesystem {
 	/**
 	 * Reader constructor.
 	 *
 	 * @param                           $fileName
-	 * @param \core\config\FileResolver $fileResolver
+	 * @param \falcon\core\config\FileResolver $fileResolver
 	 * @param string                    $defaultScope
 	 */
 	public function __construct(
-		$fileName = 'menu.yaml', \core\config\FileResolver $fileResolver, $defaultScope = 'backend'
+		$fileName = 'menu.yaml', \falcon\core\config\FileResolver $fileResolver, $defaultScope = 'backend'
 	) {
 		parent::__construct($fileName, $fileResolver, $defaultScope);
 	}

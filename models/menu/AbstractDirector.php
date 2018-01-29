@@ -6,9 +6,9 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace app\modules\backend\models\menu;
+namespace falcon\backend\models\menu;
 
-use app\modules\backend\models\menu\builder\CommandFactory;
+use falcon\backend\models\menu\builder\CommandFactory;
 
 /**
  * @api

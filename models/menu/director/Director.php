@@ -6,11 +6,11 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace app\modules\backend\models\menu\director;
+namespace falcon\backend\models\menu\director;
 
-use app\modules\backend\models\menu\AbstractDirector;
-use app\modules\backend\models\menu\Builder;
-use app\modules\backend\models\menu\builder\AbstractCommand;
+use falcon\backend\models\menu\AbstractDirector;
+use falcon\backend\models\menu\Builder;
+use falcon\backend\models\menu\builder\AbstractCommand;
 use yii\base\InvalidConfigException;
 
 /**

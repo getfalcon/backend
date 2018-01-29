@@ -6,7 +6,7 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace app\modules\backend\models\menu\item;
+namespace falcon\backend\models\menu\item;
 
 use yii\base\DynamicModel;
 use yii\base\InvalidConfigException;

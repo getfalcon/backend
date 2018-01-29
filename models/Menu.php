@@ -6,10 +6,10 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace app\modules\backend\models;
+namespace falcon\backend\models;
 
-use app\modules\backend\models\menu\Item;
-use app\modules\backend\models\menu\Item\Factory;
+use falcon\backend\models\menu\Item;
+use falcon\backend\models\menu\Item\Factory;
 use falcon\core\helpers\Serialize;
 use yii\base\InvalidConfigException;
 
@@ -45,7 +45,7 @@ class Menu extends \ArrayObject {
 		if ($pathInMenuStructure) {
 			$this->_path = $pathInMenuStructure . '/';
 		}
-		$this->setIteratorClass(\app\modules\backend\models\menu\Iterator::class);
+		$this->setIteratorClass(\falcon\backend\models\menu\Iterator::class);
 		$this->menuItemFactory = $menuItemFactory ?: \Yii::$container->get(Factory::class);
 	}
 
@@ -234,7 +234,7 @@ class Menu extends \ArrayObject {
 	/**
 	 * Find parent items
 	 *
-	 * @param \app\modules\backend\models\Menu $menu
+	 * @param \falcon\backend\models\Menu $menu
 	 * @param string                           $itemId
 	 * @param array                            &$parents
 	 *

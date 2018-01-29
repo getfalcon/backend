@@ -6,7 +6,7 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace app\modules\backend\models\menu;
+namespace falcon\backend\models\menu;
 
 use yii\base\InvalidConfigException;
 
@@ -18,14 +18,14 @@ class Config {
 	const CACHE_ID = 'backend_menu_config';
 
 	/**
-	 * @var \app\modules\backend\models\MenuFactory
+	 * @var \falcon\backend\models\MenuFactory
 	 */
 	protected $_menuFactory;
 
 	/**
 	 * Menu model
 	 *
-	 * @var \app\modules\backend\models\Menu
+	 * @var \falcon\backend\models\Menu
 	 */
 	protected $_menu;
 
@@ -35,12 +35,12 @@ class Config {
 	protected $_director;
 
 	/**
-	 * @var \app\modules\backend\models\menu\Builder
+	 * @var \falcon\backend\models\menu\Builder
 	 */
 	protected $_menuBuilder;
 
 	/**
-	 * @var \app\modules\backend\models\menu\config\Reader
+	 * @var \falcon\backend\models\menu\config\Reader
 	 */
 	protected $_configReader;
 
@@ -48,12 +48,12 @@ class Config {
 	 * Config constructor.
 	 *
 	 * @param Builder                                        $menuBuilder
-	 * @param \app\modules\backend\models\MenuFactory        $menuFactory
-	 * @param \app\modules\backend\models\menu\config\Reader $configReader
+	 * @param \falcon\backend\models\MenuFactory        $menuFactory
+	 * @param \falcon\backend\models\menu\config\Reader $configReader
 	 * @param AbstractDirector                               $menuDirector
 	 */
 	public function __construct(
-		\app\modules\backend\models\menu\Builder $menuBuilder, \app\modules\backend\models\MenuFactory $menuFactory, \app\modules\backend\models\menu\config\Reader $configReader, AbstractDirector $menuDirector
+		\falcon\backend\models\menu\Builder $menuBuilder, \falcon\backend\models\MenuFactory $menuFactory, \falcon\backend\models\menu\config\Reader $configReader, AbstractDirector $menuDirector
 	) {
 		$this->_director     = $menuDirector;
 		$this->_menuBuilder  = $menuBuilder;
@@ -64,7 +64,7 @@ class Config {
 	/**
 	 * Build menu model from config
 	 *
-	 * @return \app\modules\backend\models\Menu
+	 * @return \falcon\backend\models\Menu
 	 *
 	 * @throws \Exception|\InvalidArgumentException
 	 * @throws \Exception

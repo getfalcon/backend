@@ -6,9 +6,9 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace app\modules\backend\models\menu\builder\command;
+namespace falcon\backend\models\menu\builder\command;
 
-use app\modules\backend\models\menu\builder\AbstractCommand;
+use falcon\backend\models\menu\builder\AbstractCommand;
 
 /**
  * Command to remove menu item

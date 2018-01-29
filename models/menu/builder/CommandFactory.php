@@ -6,7 +6,7 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace app\modules\backend\models\menu\builder;
+namespace falcon\backend\models\menu\builder;
 
 /**
  * Menu builder command factory
@@ -24,7 +24,7 @@ class CommandFactory {
 		/**
 		 * @var $command AbstractCommand
 		 */
-		$command = \Yii::$container->get('app\modules\backend\models\menu\builder\command\\' . ucfirst($commandName), [$data['data']]);
+		$command = \Yii::$container->get('falcon\backend\models\menu\builder\command\\' . ucfirst($commandName), [$data['data']]);
 
 		return $command;
 	}

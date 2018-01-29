@@ -6,7 +6,7 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace app\modules\backend\models;
+namespace falcon\backend\models;
 
 use yii\base\InvalidConfigException;
 

@@ -6,11 +6,11 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace app\modules\backend\models\menu;
+namespace falcon\backend\models\menu;
 
-use app\modules\backend\models\Menu;
-use app\modules\backend\models\menu\item\Validator;
-use app\modules\backend\models\MenuFactory;
+use falcon\backend\models\Menu;
+use falcon\backend\models\menu\item\Validator;
+use falcon\backend\models\MenuFactory;
 use yii\base\InvalidConfigException;
 use yii\helpers\Url;
 

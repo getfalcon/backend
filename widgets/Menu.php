@@ -8,12 +8,12 @@
 
 // @codingStandardsIgnoreFile
 
-namespace app\modules\backend\widgets;
+namespace falcon\backend\widgets;
 
-use app\modules\backend\models\menu\Config;
-use app\modules\backend\models\menu\filter\Iterator;
-use app\modules\backend\models\menu\filter\IteratorFactory;
-use app\modules\backend\models\menu\Item;
+use falcon\backend\models\menu\Config;
+use falcon\backend\models\menu\filter\Iterator;
+use falcon\backend\models\menu\filter\IteratorFactory;
+use falcon\backend\models\menu\Item;
 use falcon\core\widgets\CacheWidget;
 use yii\base\InvalidConfigException;
 use yii\caching\Cache;
@@ -116,7 +116,7 @@ class Menu extends CacheWidget {
 	/**
 	 * Render menu
 	 *
-	 * @param \app\modules\backend\models\Menu $menu
+	 * @param \falcon\backend\models\Menu $menu
 	 * @param int                              $level
 	 *
 	 * @return string
@@ -130,7 +130,7 @@ class Menu extends CacheWidget {
 			'role' => (0 == $level ? 'menubar' : null)
 		]);
 
-		/** @var $menuItem \app\modules\backend\models\menu\Item */
+		/** @var $menuItem \falcon\backend\models\menu\Item */
 		foreach ($this->_getMenuIterator($menu) as $menuItem) {
 			$output .= Html::beginTag('li', [
 				'class' => $this->_renderItemCssClass($menuItem, $level),
@@ -150,7 +150,7 @@ class Menu extends CacheWidget {
 	/**
 	 * Get menu filter iterator
 	 *
-	 * @param \app\modules\backend\models\Menu $menu
+	 * @param \falcon\backend\models\Menu $menu
 	 *
 	 * @return Iterator
 	 *
@@ -211,7 +211,7 @@ class Menu extends CacheWidget {
 	/**
 	 * Get menu config model
 	 *
-	 * @return \app\modules\backend\models\Menu
+	 * @return \falcon\backend\models\Menu
 	 *
 	 * @throws \Exception
 	 */
@@ -278,7 +278,7 @@ class Menu extends CacheWidget {
 	/**
 	 * Building Array with Column Brake Stops
 	 *
-	 * @param \app\modules\backend\models\Menu $items
+	 * @param \falcon\backend\models\Menu $items
 	 * @param int                              $limit
 	 *
 	 * @return array|void
@@ -312,7 +312,7 @@ class Menu extends CacheWidget {
 	/**
 	 * Count All Subnavigation Items
 	 *
-	 * @param \app\modules\backend\models\Menu $items
+	 * @param \falcon\backend\models\Menu $items
 	 *
 	 * @return int
 	 *
@@ -344,7 +344,7 @@ class Menu extends CacheWidget {
 	/**
 	 * Render Navigation
 	 *
-	 * @param \app\modules\backend\models\Menu $menu
+	 * @param \falcon\backend\models\Menu $menu
 	 * @param int                              $level
 	 * @param int                              $limit
 	 * @param array                            $colBrakes

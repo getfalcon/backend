@@ -6,10 +6,9 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace app\modules\backend\controllers\backend;
+namespace falcon\backend\controllers\backend;
 
-use app\modules\backend\models\menu\Config;
-use yii\helpers\VarDumper;
+use falcon\backend\models\menu\Config;
 use yii\web\Controller;
 
 class IndexController extends Controller {

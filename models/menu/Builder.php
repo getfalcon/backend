@@ -6,11 +6,11 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace app\modules\backend\models\menu;
+namespace falcon\backend\models\menu;
 
-use app\modules\backend\models\Menu;
-use app\modules\backend\models\menu\builder\AbstractCommand;
-use app\modules\backend\models\menu\item\Factory;
+use falcon\backend\models\Menu;
+use falcon\backend\models\menu\builder\AbstractCommand;
+use falcon\backend\models\menu\item\Factory;
 
 /**
  * Menu builder object. Retrieves commands (\Magento\Backend\Model\Menu\Builder\AbstractCommand)

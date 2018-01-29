@@ -6,7 +6,7 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace app\modules\backend;
+namespace falcon\backend;
 
 class Module extends \falcon\core\base\Module {
 

@@ -6,12 +6,12 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace app\modules\backend;
+namespace falcon\backend;
 
 
 class Bootstrap implements \yii\base\BootstrapInterface {
 
 	public function bootstrap($app) {
-		\Yii::$container->set(\app\modules\backend\models\menu\AbstractDirector::class, \app\modules\backend\models\menu\director\Director::class);
+		\Yii::$container->set(\falcon\backend\models\menu\AbstractDirector::class, \falcon\backend\models\menu\director\Director::class);
 	}
 }
