@@ -1,0 +1,24 @@
+menu:
+  - type: add
+    id: Magento_Backend::content
+    title: Content
+    module: backend
+    sortOrder: 50
+    resource: Magento_Backend::content
+
+  - type: add
+    id: Falcon_Backend::system_design
+    title: Design
+    module: backend
+    sortOrder: 20
+    parent: Magento_Backend::content
+    resource: Magento_Backend::design
+
+  - type: add
+    id: Magento_Backend::system_design_schedule
+    title: Schedule
+    module: backend
+    sortOrder: 30
+    parent: Magento_Backend::system_design
+    action: frontend/index/index
+    resource: Magento_Backend::schedule

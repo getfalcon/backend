@@ -1,0 +1,8 @@
+# Module Name
+name: backend
+
+# Module Class Name
+moduleClass: \app\modules\backend\Module
+
+# Module Bootstrap Class Name
+bootstrapClass: \app\modules\backend\Bootstrap

@@ -1,0 +1,8 @@
+# Router backend or frontend
+router: backend
+
+# Route
+route: admin
+
+# Module name
+module: backend
