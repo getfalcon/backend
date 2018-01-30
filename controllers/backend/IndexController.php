@@ -8,8 +8,7 @@
 
 namespace falcon\backend\controllers\backend;
 
-use falcon\backend\models\menu\Config;
-use yii\web\Controller;
+use falcon\backend\app\Controller;
 
 class IndexController extends Controller {
 	/**
@@ -17,11 +16,7 @@ class IndexController extends Controller {
 	 * @throws \Exception
 	 */
 	public function actionIndex() {
-		/**
-		 * @var $menu Config
-		 */
-
-		//VarDumper::dump($menu->getMenu(), 10, true);
+        $this->_setActiveMenu('elements');
 		return $this->render('index');
 	}
 }

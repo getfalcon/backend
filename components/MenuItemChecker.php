@@ -6,7 +6,7 @@
  * @version    0.0.1-alpha.0.1
  */
 
-namespace falcon\backend\widgets;
+namespace falcon\backend\components;
 
 use falcon\backend\models\menu\Item;
 use yii\base\InvalidConfigException;

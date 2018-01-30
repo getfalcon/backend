@@ -9,9 +9,18 @@
 namespace falcon\backend;
 
 
+use falcon\backend\components\Menu;
+
 class Bootstrap implements \yii\base\BootstrapInterface {
 
-	public function bootstrap($app) {
-		\Yii::$container->set(\falcon\backend\models\menu\AbstractDirector::class, \falcon\backend\models\menu\director\Director::class);
-	}
+    /**
+     * @param \yii\base\Application $app
+     *
+     * @throws \yii\base\InvalidConfigException
+     */
+    public function bootstrap($app) {
+        \Yii::$container->set(\falcon\backend\models\menu\AbstractDirector::class, \falcon\backend\models\menu\director\Director::class);
+
+        \Yii::$app->set('menu', Menu::class);
+    }
 }

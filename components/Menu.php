@@ -8,13 +8,13 @@
 
 // @codingStandardsIgnoreFile
 
-namespace falcon\backend\widgets;
+namespace falcon\backend\components;
 
 use falcon\backend\models\menu\Config;
 use falcon\backend\models\menu\filter\Iterator;
 use falcon\backend\models\menu\filter\IteratorFactory;
 use falcon\backend\models\menu\Item;
-use falcon\core\widgets\CacheWidget;
+use yii\base\Component;
 use yii\base\InvalidConfigException;
 use yii\caching\Cache;
 use yii\helpers\Html;
@@ -22,7 +22,8 @@ use yii\helpers\Html;
 /**
  * Backend menu block
  */
-class Menu extends CacheWidget {
+class Menu extends Component
+{
 	const CACHE_TAGS = 'BACKEND_MAIN_MENU';
 
 	/**
@@ -39,6 +40,11 @@ class Menu extends CacheWidget {
 	 * @var \yii\caching\Dependency
 	 */
 	public $cacheDependency;
+
+    /**
+     * @var string
+     */
+    public $active = 'Falcon_Backend::system_design_schedule';
 
 	/**
 	 * @var string
@@ -199,12 +205,12 @@ class Menu extends CacheWidget {
 	 * @throws \Exception
 	 */
 	public function getActiveItemModel() {
-//        if ($this->_activeItemModel === null) {
-//            $this->_activeItemModel = $this->getMenuModel()->get($this->getActive());
-//            if (false == $this->_activeItemModel instanceof Item) {
-//                $this->_activeItemModel = false;
-//            }
-//        }
+        if ($this->_activeItemModel === null) {
+            $this->_activeItemModel = $this->getMenuModel()->get($this->getActive());
+            if (false == $this->_activeItemModel instanceof Item) {
+                $this->_activeItemModel = false;
+            }
+        }
 		return $this->_activeItemModel;
 	}
 
@@ -385,4 +391,24 @@ class Menu extends CacheWidget {
 
 		return $outputStart . $output . '</ul>';
 	}
+
+    /**
+     * @return string
+     */
+    public function getActive(): string
+    {
+        echo 'get';
+        var_dump($this->active);
+        return $this->active;
+    }
+
+    /**
+     * @param string $active
+     */
+    public function setActive(string $active)
+    {
+        $this->active = $active;
+        echo 'set';
+        var_dump($this->active);
+    }
 }

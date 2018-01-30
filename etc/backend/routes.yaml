@@ -5,4 +5,4 @@ router: backend
 route: admin
 
 # Module name
-module: backend
+module: Falcon_Backend
