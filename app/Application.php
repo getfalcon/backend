@@ -9,7 +9,6 @@
 namespace falcon\backend\app;
 
 use falcon\core\components\UrlRulesLoader;
-use yii\helpers\ArrayHelper;
 
 class Application extends \yii\web\Application
 {
@@ -34,10 +33,8 @@ class Application extends \yii\web\Application
      */
     public function coreComponents()
     {
-        $return = [
-            'view' => ['class' => 'falcon\backend\app\View'],
-        ];
-
-        return ArrayHelper::merge(parent::coreComponents(), $return);
+        return array_merge(parent::coreComponents(), [
+            'view' => ['class' => '\falcon\backend\app\View'],
+        ]);
     }
 }

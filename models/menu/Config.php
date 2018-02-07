@@ -53,7 +53,10 @@ class Config {
 	 * @param AbstractDirector                               $menuDirector
 	 */
 	public function __construct(
-		\falcon\backend\models\menu\Builder $menuBuilder, \falcon\backend\models\MenuFactory $menuFactory, \falcon\backend\models\menu\config\Reader $configReader, AbstractDirector $menuDirector
+        \falcon\backend\models\menu\Builder $menuBuilder,
+        \falcon\backend\models\MenuFactory $menuFactory,
+        \falcon\backend\models\menu\config\Reader $configReader,
+        AbstractDirector $menuDirector
 	) {
 		$this->_director     = $menuDirector;
 		$this->_menuBuilder  = $menuBuilder;

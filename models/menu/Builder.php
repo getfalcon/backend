@@ -30,10 +30,11 @@ class Builder {
 	protected $_itemFactory;
 
 	/**
-	 * @param Factory $menuItemFactory
+     * @param Factory $factory
 	 */
-	public function __construct(Factory $menuItemFactory) {
-		$this->_itemFactory = $menuItemFactory;
+    public function __construct(Factory $factory)
+    {
+        $this->_itemFactory = $factory;
 	}
 
 	/**

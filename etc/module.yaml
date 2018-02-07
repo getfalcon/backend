@@ -6,8 +6,3 @@ moduleClass: \falcon\backend\Module
 
 # Module Bootstrap Class Name
 bootstrapClass: \falcon\backend\Bootstrap
-
-# Sequence
-sequence:
-  - Falcon_Theme
-  - Falcon_Config

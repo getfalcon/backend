@@ -8,8 +8,8 @@
 
 namespace falcon\backend\app;
 
-
 use falcon\backend\components\Menu;
+use falcon\theme\app\Theme;
 
 class View extends \yii\web\View
 {
@@ -23,6 +23,12 @@ class View extends \yii\web\View
      * @var Menu
      */
     protected $menu;
+
+    /**
+     * @var Theme|array|string the theme object or the configuration for creating the theme object.
+     * If not set, it means theming is not enabled.
+     */
+    public $theme;
 
     /**
      * {@inheritdoc}

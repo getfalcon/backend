@@ -8,10 +8,10 @@
 
 namespace falcon\backend;
 
-
 use falcon\backend\components\Menu;
 
-class Bootstrap implements \yii\base\BootstrapInterface {
+class Bootstrap implements \yii\base\BootstrapInterface
+{
 
     /**
      * @param \yii\base\Application $app

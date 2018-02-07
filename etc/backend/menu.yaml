@@ -22,3 +22,111 @@ menu:
     parent: Falcon_Backend::system_design
     action: frontend/index/index
     resource: Falcon_Backend::schedule
+
+  - type: add
+    id: Falcon_Backend::system_design_schedule1
+    title: Schedule 1
+    module: backend
+    sortOrder: 40
+    action: frontend/index/index
+    parent: Falcon_Backend::content
+    resource: Falcon_Backend::schedule
+
+  - type: add
+    id: Falcon_Backend::system_design_schedule2
+    title: Schedule 2
+    module: backend
+    sortOrder: 50
+    parent: Falcon_Backend::system_design
+    action: frontend/index/index
+    resource: Falcon_Backend::schedule
+
+  - type: add
+    id: Falcon_Backend::system_design_schedule3
+    title: Schedule 3
+    module: backend
+    sortOrder: 60
+    parent: Falcon_Backend::system_design
+    action: frontend/index/index
+    resource: Falcon_Backend::schedule
+
+  - type: add
+    id: Falcon_Backend::system_design_schedule4
+    title: Schedule 4
+    module: backend
+    sortOrder: 70
+    parent: Falcon_Backend::system_design
+    action: frontend/index/index
+    resource: Falcon_Backend::schedule
+
+  - type: add
+    id: Falcon_Backend::system_design_schedule5
+    title: Schedule 5
+    module: backend
+    sortOrder: 80
+    parent: Falcon_Backend::system_design
+    action: frontend/index/index
+    resource: Falcon_Backend::schedule
+
+  - type: add
+    id: Falcon_Backend::test_6
+    title: Schedule 5
+    module: backend
+    sortOrder: 80
+    parent: Falcon_Backend::system_design
+    action: frontend/index/index
+    resource: Falcon_Backend::schedule
+
+  - type: add
+    id: Falcon_Backend::system_design_schedule6
+    title: Schedule 1
+    module: backend
+    sortOrder: 40
+    parent: Falcon_Backend::system_design
+    action: frontend/index/index
+    resource: Falcon_Backend::schedule
+
+  - type: add
+    id: Falcon_Backend::system_design_schedule7
+    title: Schedule 2
+    module: backend
+    sortOrder: 50
+    parent: Falcon_Backend::system_design
+    action: frontend/index/index
+    resource: Falcon_Backend::schedule
+
+  - type: add
+    id: Falcon_Backend::system_design_schedule8
+    title: Schedule 3
+    module: backend
+    sortOrder: 60
+    parent: Falcon_Backend::system_design
+    action: frontend/index/index
+    resource: Falcon_Backend::schedule
+
+  - type: add
+    id: Falcon_Backend::system_design_schedule9
+    title: Schedule 4
+    module: backend
+    sortOrder: 70
+    parent: Falcon_Backend::system_design_schedule1
+    action: frontend/index/index
+    resource: Falcon_Backend::schedule
+
+  - type: add
+    id: Falcon_Backend::system_design_schedule10
+    title: Schedule 5
+    module: backend
+    sortOrder: 80
+    parent: Falcon_Backend::system_design_schedule1
+    action: frontend/index/index
+    resource: Falcon_Backend::schedule
+
+  - type: add
+    id: Falcon_Backend::test_2
+    title: Schedule 5
+    module: backend
+    sortOrder: 80
+    parent: Falcon_Backend::system_design_schedule1
+    action: frontend/index/index
+    resource: Falcon_Backend::schedule
