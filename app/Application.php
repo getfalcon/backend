@@ -35,6 +35,12 @@ class Application extends \yii\web\Application
     {
         return array_merge(parent::coreComponents(), [
             'view' => ['class' => '\falcon\backend\app\View'],
+            'user' => [
+                'class' => \yii\web\User::class,
+                'identityClass' => \falcon\backend\models\User::class,
+                'enableAutoLogin' => true,
+                'loginUrl' => ['backend/admin/index'],
+            ],
         ]);
     }
 }

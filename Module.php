@@ -8,11 +8,33 @@
 
 namespace falcon\backend;
 
-class Module extends \falcon\core\base\Module {
+use yii\filters\AccessControl;
 
+class Module extends \falcon\core\base\Module
+{
+
+    /**
+     * {@inheritdoc}
+     */
+//    public function behaviors()
+//    {
+//        return [
+//            'access' => [
+//                'class' => AccessControl::className(),
+//                'rules' => [
+//                    [
+//                        'allow' => true,
+//                        'roles' => ['@'],
+//                    ]
+//                ],
+//            ],
+//        ];
+//    }
+
+    /**
+     * {@inheritdoc}
+     */
 	public function init() {
 		parent::init();
-
-
 	}
 }

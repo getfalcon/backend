@@ -1,8 +1,0 @@
-events:
-  - event:
-      name: afterInsert
-      observers:
-       - observer:
-          class: falcon\config\models\ConfigData
-          name: after_insert_config
-          instance: falcon\config\observer\AfterSave

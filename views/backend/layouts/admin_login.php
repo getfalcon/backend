@@ -6,8 +6,4 @@
  * @version    0.0.1-alpha.0.1
  */
 
-/* @var $this yii\web\View */
 
-$this->title = 'Admin panel';
-?>
-<div>Admin Panel</div>
